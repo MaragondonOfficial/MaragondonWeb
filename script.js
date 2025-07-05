@@ -1,29 +1,51 @@
 document.addEventListener("DOMContentLoaded", function () {
   const ua = navigator.userAgent;
-  console.log("User Agent:", ua); // for debugging
-
-  // Broader mobile detection
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi/i.test(ua);
 
   if (isMobile) {
     document.body.innerHTML = `
-      <div style="
-        background: white;
-        color: black;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5rem;
-        font-family: Arial, sans-serif;">
-        📵 This website is best viewed on a desktop.<br><br>
-        Please enable <b>Desktop Mode</b> in your browser settings.
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(135deg, #ffffff, #f2f2f2);
+          font-family: 'Inter', sans-serif;
+        }
+        .mobile-warning {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          color: #333;
+        }
+        .mobile-warning img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+        }
+        .mobile-warning h1 {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+        .mobile-warning p {
+          font-size: 1rem;
+          line-height: 1.6;
+          max-width: 400px;
+        }
+        .mobile-warning b {
+          color: #e91e63;
+        }
+      </style>
+
+      <div class="mobile-warning">
+        <img src="brgylogo.jpg" alt="Logo" />
+        <h1>📵 Desktop Mode Recommended</h1>
+        <p>This website is designed for larger screens.<br>
+        Please enable <b>Desktop Mode</b> in your mobile browser menu to continue.</p>
       </div>
     `;
-  } else {
-    console.log("Not mobile — desktop mode allowed.");
   }
 });
