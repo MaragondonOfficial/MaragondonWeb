@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const isMobile = /Mobi|Android|iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const ua = navigator.userAgent;
+  console.log("User Agent:", ua); // for debugging
+
+  // Broader mobile detection
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi/i.test(ua);
 
   if (isMobile) {
     document.body.innerHTML = `
@@ -20,6 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
   } else {
-    console.log("Desktop mode detected.");
+    console.log("Not mobile — desktop mode allowed.");
   }
 });
