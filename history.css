@@ -39,8 +39,8 @@ header img {
 
 nav {
   display: flex;
-  gap: 20vw;
-  margin-right: 30vw;
+  gap: 2vw;
+  margin-right: 3vw;
 }
 
 nav a {
