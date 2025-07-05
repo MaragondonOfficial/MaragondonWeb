@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const isMobile = /Mobi|Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   if (isMobile) {
-    // Clear the page
+    
     document.body.innerHTML = '';
 
-    // Add styles
+    
     const style = document.createElement('style');
     style.textContent = `
       body {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.head.appendChild(style);
 
-    // Add HTML content
+    
     const container = document.createElement('div');
     container.className = 'warning-container';
     container.innerHTML = `
@@ -57,3 +57,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(container);
   }
 });
+
+
+document.addEventListener("contextmenu", event => event.preventDefault());
+
+
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
+});
+
