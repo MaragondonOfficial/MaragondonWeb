@@ -28,10 +28,11 @@ header {
   background-size: 100% 100%;
   animation: gradientMove 10s ease infinite;
   color: #1e3c72;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: graientMove 10s ease infinite;
 }
 
 .logogroup {
