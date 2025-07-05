@@ -37,7 +37,7 @@ header {
 .logogroup {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10vw;
   color: white;
   font-weight: bold;
   font-size: 20px;
