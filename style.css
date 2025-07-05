@@ -73,18 +73,27 @@ nav a:hover{
 
 .hero {
   width: 100%;
-  min-height: 100vh;
-  background-image: url(brgyofficials.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  background-color: #fff; /* fallback if image fails */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  background: white;
 }
+
+.hero-box {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-box img {
+  width: 100%;
+  max-width: 600px; /* control image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 
 
 
@@ -92,13 +101,6 @@ nav a:hover{
   color: #ffa726;
 }
 
-.hero p {
-  max-width: 600px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
 
 .listings {
   background: linear-gradient(-45deg, YELLOW, orange, red, PURPLE);
