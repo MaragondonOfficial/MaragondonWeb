@@ -37,11 +37,11 @@ header {
 .logogroup {
   display: flex;
   align-items: center;
-  gap: 3vw;
+  gap: 1vw;
   color: white;
   font-weight: bold;
-  font-size: 20px;
-  margin-left: 10px;
+  font-size: 2vw;
+  margin-left: 1vw;
 }
 
 header img {
@@ -51,8 +51,8 @@ header img {
 
 nav {
   display: flex;
-  gap: 20vw;
-  margin-right: 30vw;
+  gap: 2vw;
+  margin-right: 3vw;
 }
 
 nav a {
