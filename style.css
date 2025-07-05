@@ -81,9 +81,9 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1vw;
   animation: fadeSlideUp 1.5s ease-out forwards;
-  margin-top: 10px;
+  margin-top: 1vw;
 }
 
 
